@@ -1,0 +1,137 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+\documentclass[]{cv-style}          % Add 'print' as an option into the square bracket to remove colours from this template for printing.
+
+\sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut
+
+\begin{document}
+
+\header{pawel.ad}{amczak}
+\lastupdated
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION  -- In the aside, each new line forces a line break
+%----------------------------------------------------------------------------------------
+
+\begin{aside}
+%
+\section{contact}
+Paweł Adamczak
++48 732 005 766
+~
+Seweryna 3/49
+30-632 Kraków
+Poland
+~
+\href{https://pawelad.me/}{https://pawelad.me}
+\href{mailto:pawel.ad@gmail.com}{gmail://pawel.ad}
+\href{https://www.github.com/pawelad}{github://pawelad}
+%
+\section{languages}
+native Polish
+fluent English
+%
+\section{favorite tech}
+{\color{red} $\varheartsuit$} Python
+~
+Django, black, Sentry, Go, Docker, Terraform, PostgreSQL, Redis
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	ABOUT SECTION
+%----------------------------------------------------------------------------------------
+
+\section{about}
+  \vspace{-0.2cm}
+
+I'm a self-proclaimed Pythonista that enjoys using \italica{and} creating software that can be called objectively good (or as close to it as possible). I believe good practices and attention to detail are very important in general and especially crucial in IT. I like tasks that are out of my comfort zone and the knowledge that comes with them. I think humility and open-mindedness are two of the most important qualities a person can have. My antiheroes are Bender Rodríguez and David Brent.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+  \vspace{-0.2cm}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {08.18 -- Now}
+  {Twenty3 Sport / All Sports Whispers}
+  {Remote / London, UK}
+  {Originally tasked with helping the data science team productise their code by converting PoC into MVPs and implementing best coding practices (i.e. CI / CD, Sentry, Docker based environment). I was then tasked with rewriting our football data importing pipeline that imports and post-processes thousands of events each day from multiple data providers and exposes it via Django REST Framework based API.}
+%------------------------------------------------
+\entry
+  {09.17 -- 07.18}
+  {VM Farms}
+  {Toronto, Canada}
+  {Part of a platform engineering team that maintained a custom build deployment pipeline, a client facing portal and an all purpose internal CLI. We worked directly with our in-house operations team to provide them with the tools to efficiently provision, configure and continuously support our client's servers.}
+%------------------------------------------------
+\entry
+  {10.16 -- 08.17}
+  {Omni Digital}
+  {Bristol, UK}
+  {Important member of an agile Python development team working on various projects - both internal and public facing - for clients like \href{https://www.bristolccg.nhs.uk/}{NHS}, \href{https://www.ukchamberofshipping.com/}{UK Chamber of Shipping} and \href{http://swns.com/}{SWNS}. I was also involved in implementing a company wide Ansible stack used for all our deployments.}
+%------------------------------------------------
+\entry
+  {09.15 -- 09.16}
+  {Sidnet Solutions / Pythonity}
+  {Remote / Warsaw, Poland}
+  {A one-man Python development team responsible for creating and maintaining Schedoodle, our internal tool that helped track availability of all employees, an official Polish site for Kolbe personality tests, and a canola trading platform made for one of the biggest Polish oil distributors. I was also tasked with releasing and maintaining some of our projects on \href{https://github.com/Pythonity}{GitHub}.}
+%------------------------------------------------
+\entry
+  {04.15 -- 09.15}
+  {JMR Technologies}
+  {Warsaw, Poland}
+  {Helped develop and release two of the company's biggest Python projects - a fully multilingual and customisable product knowledge base, and a parcel tracking status aggregator. I was also responsible for managing our production server and creating most of our provisioning automation scripts.}
+%------------------------------------------------
+\end{entrylist}
+
+\vspace{-0.2cm}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+  \vspace{-0.2cm}
+
+\begin{entrylist}
+\entry
+  {2013 -- 2016}
+  {Warsaw University of Technology}
+  {University}
+  {}
+\entry
+  {2010 -- 2013}
+  {I Liceum Ogólnokształcące w Zielonej Górze}
+  {High School}
+  {}
+\end{entrylist}
+
+\vspace{-0.4cm}
+
+%----------------------------------------------------------------------------------------
+%	OPEN SOURCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{open source}
+  \vspace{-0.2cm}
+
+\begin{itemize}
+  \item \href{https://github.com/pawelad/pymonzo}{pymonzo} - Modern Python API client for Monzo public API.
+  \item \href{https://github.com/pawelad/fakester}{fakester} - Rickroll your boss while preserving the element of surprise.
+  \item Small contributions to open source projects: \href{https://github.com/pytest-dev/pytest}{pytest}, \href{https://github.com/tox-dev/tox}{tox}, \href{https://github.com/celery/celery}{celery}, \href{https://github.com/errbotio/errbot}{errbot}, \href{https://github.com/mattermost/mattermost}{mattermost}, \href{https://github.com/jazzband/django-polymorphic}{django-polymorphic}, \href{https://github.com/bennylope/django-organizations}{django-organizations} \href{https://github.com/etianen/django-reversion}{django-reversion}, \href{https://github.com/jgorset/django-kronos}{django-kronos}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+  \vspace{-0.2cm}
+
+traveling, \ \ \ python, \ \ \ nba, \ \ \ open source, \ \ \ photography, \ \ \ music making, \ \ \ tv, \ \ \ movies, \ \ \
+%----------------------------------------------------------------------------------------
+\end{document}
