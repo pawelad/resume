@@ -92,11 +92,6 @@
 \RequirePackage[absolute,overlay]{textpos}
 \RequirePackage{polyglossia}
 
-\newcommand{\sethyphenation}[3][]{%
-  \sbox0{\begin{otherlanguage}[#1]{#2}
-    \hyphenation{#3}\end{otherlanguage}}}
-%\sethyphenation[<options>]{<language>}{<list of words separated by spaces>}
-
 \ifdefined\@cv@espanol
   \setdefaultlanguage{spanish}
   \def\lastupdatedtext{Última Actualización el}
