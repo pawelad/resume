@@ -1,0 +1,235 @@
+\documentclass[localFont,alternative,10pt]{yaac-another-awesome-cv}
+
+\usepackage[normalem]{ulem}
+\usepackage{multicol}
+\usepackage[english=nohyphenation]{hyphsubst}
+
+\name{Paweł}{Adamczak}
+\photo{3cm}{./images/bender_square.png}
+\tagline{Backend Developer}
+\socialinfo{
+  \website{https://pawelad.me/}{https://pawelad.me/} \\
+  \github{pawelad} \\
+  \email{pawel.ad@gmail.com} \\
+  \smartphone{+48 732 005 766} \\
+  \address{Kraków, Poland}
+}
+
+\begin{document}
+  \makecvheader
+
+  \makecvfooter
+    {\textsc{\today}}
+    {\textsc{Paweł Adamczak - Resume}}
+    {\thepage}
+
+  % About
+  \par{
+    I'm a backend developer with almost 10 years of professional experience. I
+    enjoy using and creating software that can be called objectively good, or as
+    close to it as possible. I like tasks that are out of my comfort zone and the
+    knowledge that comes with them. I believe that good practices and attention to
+    detail are very important in general, and especially crucial in IT. I think
+    humility and open-mindedness are two of the most important qualities a person
+    can have.
+  }
+
+  \vspace{1em}
+
+  % Skills
+  \sectionTitle{Skills}{\faTasks}
+
+  \begin{keywords}
+    \keywordsentry{Programming Languages}{\textbf{Python}, Go}
+    \keywordsentry{Databases}{\textbf{PostgreSQL}, MySQL, \textbf{Redis}, Elasticsearch}
+    \keywordsentry{Frameworks}{\textbf{Django}, \textbf{Django REST Framework}, Flask, FastAPI, Celery, \textbf{pytest}, Bootstrap}
+    \keywordsentry{Libraries}{\textbf{mypy}, \textbf{Pydantic}, \textbf{httpx}, Click, Rich, \textbf{black}, \textbf{Ruff}, \textbf{Nox}, tox, \textbf{pip-tools}, \textbf{MkDocs}}
+    \keywordsentry{Tools}{\textbf{Docker}, \textbf{Docker Compose}, \textbf{Terraform}, CloudFormation, Ansible, git, zsh}
+    \keywordsentry{Other}{\textbf{AWS}, \textbf{GitHub CI}, CircleCI, nginx, dokku, OpenAPI, JSON Schema, \textbf{Sentry}}
+  \end{keywords}
+
+  % Experience
+  \sectionTitle{Experience}{\faSuitcase}
+
+  \begin{experiences}
+    \experience
+      {November 2024} {Backend Engineer}{\link{https://twenty3.sport/}{Twenty3}}{Remote / London, UK}
+      {August 2018}   {
+                        \begin{itemize}
+                          \item Integral part of the team that rewrote company's main football data ingestion pipeline, that imports and post-processes thousands of football events every day (from multiple data providers), and exposes them through an internal API.
+                          \item Responsible for productising proof of concepts created by the Data Science team into MVPs.
+                          \item Implemented best practices, including:
+                            \begin{itemize}
+                              \item Continuous Integration and Continuous Delivery pipelines
+                              \item Docker based development environments
+                              \item Using JSON Schema for dynamic API documentation
+                              \item Creating company's CloudFormation based IaaC stack
+                              \item Adding Python type hints
+                              \item Using Pydantic for validating data from all our data providers
+                              \item Using Sentry for error and performance tracking
+                              \item Centralizing log digestion
+                            \end{itemize}
+                          \item Helped create tools used by major football clubs, media and betting companies, including \link{https://www.skysports.com/}{SkySports}, \link{https://www.squawka.com/}{Squawka}, \link{https://www.livescore.com/}{LiveScore}~and \link{https://www.williamhill.com/}{William Hill}.
+                        \end{itemize}
+                      }
+                      {Python,PostgreSQL,Redis,Django,Django REST Framework,Celery,Pydantic,AWS,ECS,CloudFormation,Circle CI,Sentry}
+    \emptySeparator
+    \experience
+      {July 2018}     {Platform Developer}{\link{https://vmfarms.com/}{VM Farms}}{Toronto, Canada}
+      {September 2017}{
+                        \begin{itemize}
+                          \item Part of a platform engineering team that maintained:
+                            \begin{itemize}
+                              \item Custom-built deployment pipeline for our clients
+                              \item Client facing portal, that allowed them to configure app environments and trigger new deployments
+                              \item All-purpose internal CLI for our operations team
+                            \end{itemize}
+                          \item Worked directly with our in-house operations team to provide them with the tools to efficiently provision, configure and continuously support our client's infrastructure.
+                        \end{itemize}
+                      }
+                      {Python,PostgreSQL,MySQL,Django,Click,Terraform,Ansible,Consul,Vault,Vagrant,AWS}
+    \emptySeparator
+    \experience
+      {August 2017}   {Backend Developer}{\link{https://omni-digital.co.uk/}{Omni Digital}}{Bristol, UK}
+      {October 2016}  {
+                        \begin{itemize}
+                          \item Helped create and maintain internal and public facing projects for clients such as \link{https://www.bristolccg.nhs.uk/}{NHS}, \link{https://www.ukchamberofshipping.com/}{UK Chamber of Shipping}~and \link{http://swns.com/}{SWNS}.
+                          \item Implemented a company-wide Ansible stack used for all deployments.
+                        \end{itemize}
+                      }
+                      {Python,MySQL,Elasticsearch,Django,Wagtail,Ansible,Digital Ocean}
+    \emptySeparator
+    \experience
+      {September 2016}{Backend Developer}{\link{https://sidnet.info/}{Sidnet Solutions}}{Remote / Warsaw, Poland}
+      {September 2015}{
+                        \begin{itemize}
+                          \item Created and maintained:
+                            \begin{itemize}
+                              \item Schedoodle, an internal tool that helped track availability of all employees
+                              \item Official Polish site for Kolbe personality tests
+                              \item Canola trading platform made for one of the biggest Polish oil distributors
+                            \end{itemize}
+                          \item Responsible for releasing and maintaining some of our open source projects on \link{https://github.com/Pythonity}{GitHub}.
+                        \end{itemize}
+                      }
+                      {Python,PostgreSQL,Django,Bootstrap,Digital Ocean}
+    \emptySeparator
+    \experience
+      {September 2015}{Backend Developer}{\link{https://jmr.pl/}{JMR Technologies}}{Warsaw, Poland}
+      {April 2015}    {
+                        \begin{itemize}
+                          \item Helped develop and release two of the company's biggest (at the time) Python projects:
+                            \begin{itemize}
+                              \item Fully multilingual and customisable product knowledge base
+                              \item Parcel tracking status aggregator that integrated with multiple delivery companies
+                            \end{itemize}
+                          \item Responsible for managing our production server and creating most of our provisioning automation scripts.
+                        \end{itemize}
+                      }
+                      {Python,MySQL,Elasticsearch,Django,Fabric}
+  \end{experiences}
+
+  % Education
+  \sectionTitle{Education}{\faGraduationCap}
+
+  \begin{scholarship}
+    \scholarshipentry
+      {2013 – 2016}
+      {Warsaw University of Technology}
+    \scholarshipentry
+      {2010 – 2013}
+      {I Liceum Ogólnokształcące w Zielonej Górze}
+  \end{scholarship}
+
+  \vspace{0.5em}
+
+  % Projects
+  \sectionTitle{Projects}{\faLaptop}
+
+  \begin{projects}
+    \project
+      {pymonzo}{}
+      {\github{pawelad/pymonzo} \website{https://pymonzo.pawelad.dev/}{https://pymonzo.pawelad.dev/}}
+      {
+        Modern Python API client for \link{https://monzo.com/}{Monzo}~public \link{https://docs.monzo.com/}{API}. \\
+        Fully type annotated, with explicitly defined and validated API schemas (via \link{https://docs.pydantic.dev/}{Pydantic}),
+        sensible defaults, easy authentication (with automatic access token refreshing)
+        and optional \link{https://github.com/Textualize/rich}{Rich}~support for pretty printing.
+      }
+      {Python,Pydantic,httpx,GitHub CI,MkDocs,Read the Docs}
+
+    \project
+      {monz}{}
+      {\github{pawelad/monz} \website{https://monz.pawelad.dev/}{https://monz.pawelad.dev/}}
+      {
+        Simple CLI for quickly accessing your \link{https://monzo.com/}{Monzo}~account. \\
+        Built on top of \link{https://pymonzo.pawelad.dev/}{pymonzo}.
+      }
+      {Python,Click,Rich,GitHub CI,MkDocs,Read the Docs}
+
+    \project
+      {fakester}{}
+      {\github{pawelad/fakester} \website{https://fakester.pawelad.me/}{https://fakester.pawelad.me/}}
+      {
+        Rickroll your \sout{boss} friend while preserving the element of surprise. \\
+        Simple Django website that allows creating URL redirects that help fool your \sout{boss} friend.
+      }
+      {Python,Django,Bootstrap,GitHub CI,dokku}
+
+    \project
+      {music snapshot}{}
+      {\github{pawelad/music\_snapshot}}
+      {
+        Save a snapshot of your day as a Spotify playlist. \\
+        CLI for saving a part of your music listening history (taken from Last.fm) and
+        saving it as a Spotify playlist.
+      }
+      {Python,Click,Rich,GitHub CI}
+  \end{projects}
+
+  % Languages and interests
+  \twocolumnsection
+  {\sectionTitle{Languages}{\faLanguage}
+    \begin{skills}
+      \skill{Polish}{5}
+      \skill{English}{4}
+    \end{skills}}
+  {\sectionTitle{Interests}{\faStar}
+    \vspace{1em}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item traveling
+        \item nba
+        \item live music
+        \item open source
+        \item photography
+        \item music making
+        \item tv series
+        \item movies
+      \end{itemize}
+    \end{multicols}
+  }
+
+  % References
+  \sectionTitle{References}{\faQuoteLeft}
+  \vspace{0.5em}
+
+  \begin{referees}
+    \refereeMailOnly
+      {Michał Wojciechowski}
+      {CEO}
+      {Sidnet Solutions}
+      {michal@sidnet.info}
+    \refereeMailOnly
+      {Alexandre Byeon}
+      {Principal SRE}
+      {Prodigy Education}
+      {tidhilm@gmail.com}
+    \refereeMailOnly
+      {Kyle Joseph}
+      {Full Stack Developer}
+      {Twenty3}
+      {kyle@seoplay.co.uk}
+  \end{referees}
+
+\end{document}

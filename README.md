@@ -21,18 +21,17 @@ help                            Show help message
 ```
 
 ## Authors
-Based on [template][friggeri template] by [Adrien Friggeri][friggeri].
+Based on [YAAC template].
 
 Changes by [Paweł Adamczak][pawelad].
 
 Source code is available at [GitHub][github resume].
 
-Released under [MIT License][license].
+Released under [LPPL Version 1.3c][license].
 
 
-[Docker]: https://docs.docker.com/get-docker/
-[friggeri template]: https://www.overleaf.com/latex/templates/friggeri-cv-template/hmnchbfmjgqh
-[friggeri]: https://github.com/friggeri
+[docker]: https://docs.docker.com/get-docker/
 [github resume]: https://github.com/pawelad/resume
 [license]: ./LICENSE
 [pawelad]: https://pawelad.me/
+[yaac template]: https://github.com/darwiin/yaac-another-awesome-cv

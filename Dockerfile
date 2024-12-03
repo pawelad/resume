@@ -9,15 +9,16 @@ ENV HOME="/home/$USER"
 ENV WORK_DIR="/data"
 
 # Install system dependencies
+# Source: https://github.com/darwiin/yaac-another-awesome-cv/blob/31dcdba2e0ead49edd665a7c601d60f555d20341/.circleci/config.yml#L12
 RUN rm -f /etc/apt/apt.conf.d/docker-clean; echo 'Binary::apt::APT::Keep-Downloaded-Packages "true";' > /etc/apt/apt.conf.d/keep-cache
 RUN --mount=type=cache,sharing=locked,target=/var/lib/apt/lists \
     --mount=type=cache,sharing=locked,target=/var/cache/apt \
     apt-get update \
     && apt-get --no-install-recommends install -y \
-      perl wget libfontconfig1 gpg ca-certificates
-
-# Update CA certificates
-RUN update-ca-certificates
+      latexmk texlive-fonts-extra texlive-fonts-recommended texlive-latex-base \
+      texlive-latex-extra texlive-latex-recommended texlive-luatex texlive-xetex \
+      texlive-pictures texlive-lang-french texlive-bibtex-extra biber lmodern fonts-font-awesome \
+      texlive-plain-generic
 
 # Create a non root user
 RUN groupadd --gid ${GID} $USER \
@@ -25,17 +26,8 @@ RUN groupadd --gid ${GID} $USER \
       --uid ${UID} --gid ${GID} \
       --shell /bin/bash $USER
 
+USER $USER
 
 WORKDIR $WORK_DIR/src
 
-# Install TinyTex
-RUN wget -qO- "https://yihui.org/tinytex/install-bin-unix.sh" | sh
-ENV PATH="$HOME/bin:$PATH"
-
-# Install LaTeX packages
-RUN tlmgr install parskip
-RUN tlmgr install pgf
-RUN tlmgr install polyglossia
-RUN tlmgr install textpos
-
-ENTRYPOINT ["xelatex"]
+ENTRYPOINT ["latexmk"]
