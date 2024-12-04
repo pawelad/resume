@@ -179,7 +179,7 @@
 \newlength{\rightcolumnlength}
 %\setlength{\rightcolumnlength}{15.3cm minus 1cm}
 %\setlength{\rightcolumnlength}{\dimexpr(\fulllength-\leftcolumnlength)\relax}
-\setlength{\rightcolumnlength}{\dimexpr(\fulllength-\leftcolumnlength)\relax}
+\setlength{\rightcolumnlength}{\dimexpr(\fulllength-\leftcolumnlength-0.75cm)\relax}
 
 % Override default left column length of (2.5cm)
 % Usage: \setleftcolumnlength{<length>}
@@ -440,10 +440,11 @@
 %                    }
 %                    {<Technology list>}
 \newcommand\experience[7]{
-  \textbf{#1}    & \textbf{#2, \textsc{#3}, #4}   								\\*
+  \textbf{#1}    & \textbf{#2, \textsc{#3}} \hfill{} #4   					\\*
   \textbf{#5}    & \begin{minipage}[t]{\rightcolumnlength}
   					         #6
                    \end{minipage}										\\*
+                 & \\
                  & \footnotesize{\foreach \n in {#7}{\cvtag{\n}}} 	\\
   }
 
@@ -518,7 +519,7 @@
 
 \newcommand*\referee[5]{
   \hspace{1em}
-  \begin{minipage}[t]{\dimexpr(\linewidth/3) - 3em}
+  \begin{minipage}[t]{\dimexpr(\linewidth/3) - 1em}
     \begin{tabular}{>{}l >{}l}
       \multicolumn{2}{l}{\textbf{#1}}\\
       \multicolumn{2}{l}{\emph{#2}, \textsc{#3}}\\
@@ -530,11 +531,11 @@
 
 \newcommand*\refereeMailOnly[4]{
   \hspace{1em}
-  \begin{minipage}[t]{\dimexpr(\linewidth/3) - 3em}
+  \begin{minipage}[t]{\dimexpr(\linewidth/3) - 1em}
     \begin{tabular}{>{}l >{}l}
       \multicolumn{2}{l}{\textbf{#1}}\\
       \multicolumn{2}{l}{\emph{#2}, \textsc{#3}}\\
-      \quad \mailSymbol & \href{mailto:#4}{#4} \\
+      \href{mailto:#4}{#4} \\
     \end{tabular}
   \end{minipage}%
 }
