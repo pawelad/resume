@@ -30,4 +30,4 @@ USER $USER
 
 WORKDIR $WORK_DIR/src
 
-ENTRYPOINT ["latexmk"]
+ENTRYPOINT ["xelatex"]

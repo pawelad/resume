@@ -8,14 +8,13 @@ generate: ## Generate resume
 	docker run --rm \
        --volume "$$(pwd):/data" \
        --workdir "/data/src" \
-       latexmk:latest \
-       -cd -f -lualatex -interaction=nonstopmode -output-directory="../latex.out" \
-       resume-en.tex
+       latex:latest \
+       -output-directory="../latex.out" resume-en.tex
 	cp latex.out/resume-en.pdf Adamczak_Paweł_Resume_EN.pdf
 
 .PHONY: docker-build
 docker-build: ## Build Docker image
-	docker build -t latexmk:latest .
+	docker build -t latex:latest .
 
 .PHONY: clean
 clean: ## Clean dev artifacts
