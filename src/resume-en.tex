@@ -13,7 +13,7 @@
 \photo{3cm}{./images/bender_square.png}
 \tagline{Backend Developer}
 \socialinfo{
-  \website{https://pawelad.me/}{https://pawelad.me/} \\
+  \website{https://pawelad.me/}{https://pawelad.me} \\
   \githubSchema{pawelad} \\
   \gmailSchema{pawel.ad} \\
   \smartphone{+48 732 005 766} \\
@@ -30,13 +30,11 @@
 
   % About
   \par{
-    I'm a backend developer with almost 10 years of professional experience. I
-    enjoy using and creating software that can be called objectively good, or as
-    close to it as possible. I like tasks that are out of my comfort zone and the
-    knowledge that comes with them. I believe that good practices and attention to
-    detail are very important in general, and especially crucial in IT. I think
-    humility and open-mindedness are two of the most important qualities a person
-    can have.
+    I'm a backend developer with almost 10 years of professional experience.
+    I enjoy using and creating software that can be called objectively good, or as close to it as possible.
+    I like tasks that are out of my comfort zone and the knowledge that comes with them.
+    I believe that good practices and attention to detail are very important in general, and especially crucial in IT.
+    I think humility and open-mindedness are two of the most important qualities a person can have.
   }
 
   \vspace{1em}
@@ -46,11 +44,11 @@
 
   \begin{keywords}
     \keywordsentry{Programming Languages}{\textbf{Python}, Go}
-    \keywordsentry{Databases}{\textbf{PostgreSQL}, MySQL, \textbf{Redis}, Elasticsearch}
-    \keywordsentry{Frameworks}{\textbf{Django}, \textbf{Django REST Framework}, Flask, FastAPI, Celery, \textbf{pytest}, Bootstrap}
-    \keywordsentry{Libraries}{\textbf{mypy}, \textbf{Pydantic}, \textbf{httpx}, Click, Rich, \textbf{black}, \textbf{Ruff}, \textbf{Nox}, tox, \textbf{pip-tools}, \textbf{MkDocs}}
-    \keywordsentry{Tools}{\textbf{Docker}, \textbf{Docker Compose}, \textbf{Terraform}, CloudFormation, Ansible, git, zsh}
-    \keywordsentry{Other}{\textbf{AWS}, \textbf{GitHub CI}, CircleCI, nginx, dokku, OpenAPI, JSON Schema, \textbf{Sentry}}
+    \keywordsentry{Databases}{\textbf{PostgreSQL}, MySQL, \textbf{Redis}, Elasticsearch, SQLite}
+    \keywordsentry{Frameworks}{\textbf{Django}, \textbf{Django REST Framework}, Flask, FastAPI, Celery, \textbf{pytest}}
+    \keywordsentry{Libraries}{\textbf{mypy}, \textbf{Pydantic}, httpx, Click, Rich, \textbf{black}, \textbf{Ruff}, Nox, tox, \textbf{pip-tools}, \textbf{MkDocs}}
+    \keywordsentry{Tools}{\textbf{Docker}, \textbf{Docker Compose}, \textbf{Terraform}, CloudFormation, Ansible, git}
+    \keywordsentry{Other}{\textbf{AWS}, \textbf{GitHub CI}, CircleCI, nginx, dokku, OpenAPI, JSON Schema, \textbf{Sentry}, Bootstrap}
   \end{keywords}
 
   % Experience
@@ -63,21 +61,22 @@
                         \begin{itemize}
                           \item Integral part of the team that rewrote company's main football data ingestion pipeline, that imports and post-processes thousands of football events every day (from multiple data providers), and exposes them through an internal API.
                           \item Responsible for productising proof of concepts created by the Data Science team into MVPs.
-                          \item Implemented best practices, including:
+                          \item Helped with implementing best practices, such as:
                             \begin{itemize}
-                              \item Continuous Integration and Continuous Delivery pipelines
-                              \item Docker based development environments
+                              \item Developing Continuous Integration and Continuous Delivery pipelines
+                              \item Creating Docker based development and production environments
                               \item Using JSON Schema for dynamic API documentation
-                              \item Creating company's CloudFormation based IaaC stack
+                              \item Maintaining a CloudFormation based IaaC stack
                               \item Adding Python type hints
                               \item Using Pydantic for validating data from all our data providers
                               \item Using Sentry for error and performance tracking
+                              \item Upgrading Python and Python packages to newer versions
                               \item Centralizing log digestion
                             \end{itemize}
                           \item Helped create tools used by major football clubs, media and betting companies, including \link{https://www.skysports.com/}{SkySports}, \link{https://www.squawka.com/}{Squawka}, \link{https://www.livescore.com/}{LiveScore}~and \link{https://www.williamhill.com/}{William Hill}.
                         \end{itemize}
                       }
-                      {Python,PostgreSQL,Redis,Django,Django REST Framework,Celery,Pydantic,AWS,ECS,CloudFormation,Circle CI,Sentry}
+                      {Python,PostgreSQL,Redis,Django,Django REST Framework,Celery,Pydantic,AWS,RDS,ECS Fargate,CloudFormation,Circle CI,Sentry}
     \emptySeparator
     \experience
       {July 2018}     {Platform Developer}{\link{https://vmfarms.com/}{VM Farms}}{Toronto, Canada}
@@ -86,8 +85,8 @@
                           \item Part of a platform engineering team that maintained:
                             \begin{itemize}
                               \item Custom-built deployment pipeline for our clients
-                              \item Client facing portal, that allowed them to configure app environments and trigger new deployments
-                              \item All-purpose internal CLI for our operations team
+                              \item Client facing portal, that was used to configure app environments and trigger new deployments
+                              \item All-purpose internal CLI for our operations team, that was the glue between Terraform, Ansible, Consul and Vault
                             \end{itemize}
                           \item Worked directly with our in-house operations team to provide them with the tools to efficiently provision, configure and continuously support our client's infrastructure.
                         \end{itemize}
@@ -110,7 +109,7 @@
                         \begin{itemize}
                           \item Created and maintained:
                             \begin{itemize}
-                              \item Schedoodle, an internal tool that helped track availability of all employees
+                              \item Schedoodle, an internal tool that helped track work availability of all remote employees
                               \item Official Polish site for Kolbe personality tests
                               \item Canola trading platform made for one of the biggest Polish oil distributors
                             \end{itemize}
