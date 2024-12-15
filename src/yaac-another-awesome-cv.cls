@@ -261,6 +261,7 @@
 % Render author's github (optional)
 % Usage: \github{<github-nick>}
 \newcommand*{\github}[1]{\sociallink{\githubSymbol}{https://www.github.com/#1}{github.com/#1}}           % Github icon + URL
+\newcommand*{\githubSchema}[1]{\sociallink{\githubSymbol}{https://www.github.com/#1}{github:///#1}}
 
 % Render author's stackoverflow profile (optional)
 % Usage: \stackoverflow{<stackoverflow-user-id>}
@@ -281,6 +282,7 @@
 % Render author's email (optional)
 % Usage: \email{<email adress>}
 \newcommand*{\email}[1]{\sociallink{\mailSymbol}{mailto:#1}{#1}}
+\newcommand*{\gmailSchema}[1]{\sociallink{\mailSymbol}{mailto:#1@gmail.com}{gmail://#1}}
 
 % Render a website link (optional)
 % Usage: \website{<website name>}{<website adress>}
